@@ -1,0 +1,66 @@
+.header {
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        & div {
+            background: url(../../images/logo.png);
+            width: 45px;
+            height: 50px;
+        }
+    }
+    &__menu {
+        display: flex;
+        gap: 140px;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        gap: 45px;
+        align-items: center;
+        &-item {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background-color: transparent;
+                transition: 0.4s;
+            }
+
+            &:hover {
+                &::before {
+                    width: 100%;
+                    background-color: #fff;
+                }
+            }
+
+            &.active {
+                &::before {
+                    width: 100%;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    &__cart {
+        display: flex;
+        gap: 3px;
+        align-items: center;
+        font-size: 17px;
+        &-img {
+            width: 24px;
+            height: 24px;
+            background: url(../../images/cart.svg);
+        }
+    }
+}

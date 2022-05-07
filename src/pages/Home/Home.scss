@@ -1,0 +1,10 @@
+.home {
+    padding-top: 90px;
+    background: url(../../images/home/home-bg.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    &__title {
+        font-size: 72px;
+        font-family: "Bebas Neue", cursive;
+    }
+}
