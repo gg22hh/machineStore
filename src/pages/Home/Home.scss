@@ -37,9 +37,9 @@
     &__points {
         padding: 30px 0;
         color: #4c5054;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(5, 210px);
         justify-content: space-between;
-        flex-wrap: wrap;
         gap: 45px 20px;
         &-item {
             max-width: 210px;
@@ -88,8 +88,54 @@
     }
 }
 
+@media (max-width: 1155px) {
+    .home__points {
+        grid-template-columns: repeat(3, 215px);
+        justify-content: center;
+        gap: 45px 90px;
+    }
+}
+
+@media (max-width: 845px) {
+    .home__points {
+        grid-template-columns: repeat(2, 215px);
+        gap: 45px 50px;
+    }
+}
+
 @media (max-width: 689px) {
     .home__footer {
         position: unset;
+    }
+}
+
+@media (max-width: 495px) {
+    .home__points {
+        grid-template-columns: repeat(1, 1fr);
+        &-item {
+            max-width: 100%;
+        }
+    }
+    .home__banner {
+        text-align: center;
+    }
+    .home__uptitle {
+        letter-spacing: 8px;
+    }
+    .home__title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 345px) {
+    .home {
+        &__uptitle {
+            letter-spacing: 6px;
+        }
+        &__title {
+            font-size: 45px;
+            line-height: 45px;
+        }
     }
 }
