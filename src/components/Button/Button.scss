@@ -1,0 +1,17 @@
+.button {
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 40px;
+    width: 210px;
+    background: rgba(228, 221, 221, 0.02);
+    backdrop-filter: blur(8px);
+    border-radius: 23px;
+    transition: all 0.3s;
+}
+@media (min-width: 768px) {
+    .button:hover {
+        background-color: white;
+        color: black;
+    }
+}

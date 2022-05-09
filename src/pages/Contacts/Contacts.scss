@@ -1,6 +1,57 @@
 .contacts {
-    padding-top: 90px;
+    padding-top: 120px;
     background: url(../../images/contacts/contacts-bg.jpg) top center no-repeat;
     background-size: cover;
     height: 100vh;
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 110px;
+    }
+    &__form {
+        max-width: 420px;
+        &-title {
+            font-size: 24px;
+            line-height: 35px;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        &-text {
+            color: #4c5054;
+            font-family: "Inter", sans-serif;
+            margin-bottom: 35px;
+        }
+        &-input,
+        &-area {
+            padding: 8px 17px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(8px);
+            border-radius: 17px;
+            margin-bottom: 20px;
+            outline: unset;
+            color: white;
+            font-family: "Inter", sans-serif;
+        }
+        &-area {
+            height: 140px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        height: auto;
+        margin-bottom: 50px;
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__form {
+            margin: 0 auto;
+            & button {
+                margin: 0 auto;
+            }
+        }
+    }
 }

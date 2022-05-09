@@ -12,10 +12,13 @@ function App() {
     return (
         <div className="App">
             <Header />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/contacts" element={<Contacts />} />
-            </Routes>
+            <div className="content">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/contacts" element={<Contacts />} />
+                </Routes>
+            </div>
+
             {location !== "/" && <Footer />}
         </div>
     );
