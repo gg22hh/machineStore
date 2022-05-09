@@ -26,3 +26,139 @@ export const points = [
         link1: "Tokopedia",
     },
 ];
+
+export const footerInfo = [
+    {
+        id: 1,
+        title: "Networks",
+        links: [
+            {
+                name: "Instagram",
+                link: "/instagram",
+            },
+            {
+                name: "Facebook",
+                link: "/facebook",
+            },
+            {
+                name: "Behance",
+                link: "/behance",
+            },
+        ],
+        href: true,
+    },
+    {
+        id: 2,
+        title: "Menu",
+        links: [
+            {
+                name: "Home",
+                link: "/",
+            },
+            {
+                name: "Products",
+                link: "/products",
+            },
+            {
+                name: "Artists",
+                link: "/artists",
+            },
+            {
+                name: "Contact us",
+                link: "/contacts",
+            },
+            {
+                name: "About",
+                link: "/about",
+            },
+        ],
+    },
+    {
+        id: 3,
+        title: "Products",
+        links: [
+            {
+                name: "Jackets",
+                link: "/products",
+            },
+            {
+                name: "Sweatshirts",
+                link: "/products",
+            },
+            {
+                name: "Hoodies",
+                link: "/products",
+            },
+            {
+                name: "Tees",
+                link: "/products",
+            },
+            {
+                name: "Hoodies + T-shirt packs",
+                link: "/products",
+            },
+            {
+                name: "Pants",
+                link: "/products",
+            },
+            {
+                name: "Backpacks/carriers",
+                link: "/products",
+            },
+            {
+                name: "Vault hunters",
+                link: "/products",
+            },
+        ],
+    },
+    {
+        id: 4,
+        title: "Accessoires",
+        links: [
+            {
+                name: "Bonehead helmets",
+                link: "/artists",
+            },
+            {
+                name: "Demon plate series",
+                link: "/artists",
+            },
+            {
+                name: "Hf/bat",
+                link: "/artists",
+            },
+            {
+                name: "Masks",
+                link: "/artists",
+            },
+            {
+                name: "Moleskine jackets",
+                link: "/artists",
+            },
+            {
+                name: "Wall arts",
+                link: "/artists",
+            },
+            {
+                name: "1/6 figures",
+                link: "/artists",
+            },
+            {
+                name: "Sticker packs",
+                link: "/artists",
+            },
+            {
+                name: "Vector packs",
+                link: "/artists",
+            },
+            {
+                name: "Posters",
+                link: "/artists",
+            },
+            {
+                name: "Fonts",
+                link: "/artists",
+            },
+        ],
+    },
+];

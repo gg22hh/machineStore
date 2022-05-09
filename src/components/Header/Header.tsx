@@ -1,11 +1,15 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { selectMenu, setMenu } from "../../store/slices/menu";
 import { HeaderCart } from "./components/HeaderCart";
 import { HeaderList } from "./components/HeaderList";
 import "./Header.scss";
 
 export const Header: FC = () => {
-    const [menu, setMenu] = useState<boolean>(false);
+    const dispatch = useDispatch();
+    const menu = useSelector(selectMenu);
 
     return (
         <div className="header">
@@ -23,7 +27,7 @@ export const Header: FC = () => {
                         <HeaderCart />
                     </menu>
                     <button
-                        onClick={() => setMenu(!menu)}
+                        onClick={() => dispatch(setMenu())}
                         className={
                             menu ? "header__burger active" : "header__burger"
                         }
@@ -33,7 +37,7 @@ export const Header: FC = () => {
                 </div>
                 {menu && (
                     <div
-                        onClick={() => setMenu(false)}
+                        onClick={() => dispatch(setMenu())}
                         className="header__overlay"
                     ></div>
                 )}
