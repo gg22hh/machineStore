@@ -1,0 +1,125 @@
+.about {
+    padding-top: 120px;
+    background: url(../../images/about/about-bg.jpg) top center no-repeat;
+    background-size: contain;
+    color: white;
+    margin-bottom: 60px;
+    animation: about 2s;
+    &__info {
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        max-width: 1040px;
+        text-align: center;
+        margin: 0 auto 65px;
+        animation: aboutInfo 1s;
+    }
+    &__link {
+        font-size: 16px;
+        color: #787d82;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 470px);
+        justify-content: space-between;
+        gap: 60px 60px;
+        animation: aboutList 1s;
+    }
+    &__item {
+        max-width: 470px;
+        &-uptitle {
+            color: #4c5054;
+            margin-bottom: 15px;
+        }
+        &-types {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            gap: 12px 33px;
+            font-size: 18px;
+            line-height: 26px;
+            color: #787d82;
+            margin-bottom: 30px;
+            min-height: 65px;
+        }
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-size {
+            & thead th {
+                text-align: center;
+            }
+            & th {
+                color: #787d82;
+                font-size: 24px;
+                font-weight: 400;
+                text-align: right;
+            }
+            & td {
+                padding: 19px;
+                text-align: right;
+            }
+        }
+    }
+}
+
+@keyframes about {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aboutInfo {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes aboutList {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .about {
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+            text-align: center;
+        }
+        &__item {
+            margin: 0 auto;
+            &-types {
+                min-height: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 492px) {
+    .about__item {
+        &-types {
+            justify-content: center;
+        }
+        &-info {
+            flex-direction: column;
+        }
+    }
+    .about__link {
+        font-size: 12px;
+    }
+}
