@@ -1,8 +1,30 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import "./Artists.scss";
 import searchIcon from "../../images/artists/search-icon.svg";
+import { Card } from "../../components/Card/Card";
+import { cards } from "../../shared/projectData";
+import { Pagination } from "./components/Pagination";
 
 export const Artists: FC = () => {
+    const [currentPage, setCurrentPage] = useState(1);
+    const [cardsPerPage] = useState(12);
+
+    const lastIndex = currentPage * cardsPerPage;
+    const firstIndex = lastIndex - cardsPerPage;
+    const currentCard = cards.slice(firstIndex, lastIndex);
+
+    const cardList = currentCard.map((card) => {
+        return (
+            <Card
+                key={card.id}
+                name={card.name}
+                price={card.price}
+                image={card.image}
+                isSold={card.isSold}
+            />
+        );
+    });
+
     return (
         <div className="artists">
             <div className="container">
@@ -36,6 +58,17 @@ export const Artists: FC = () => {
                         <button className="topBar__filter-button">
                             Featured
                         </button>
+                    </div>
+                </div>
+                <div className="artists__cards">
+                    <div className="artists__cards-list">{cardList}</div>
+                    <div className="artists__cards-pagination">
+                        <Pagination
+                            cardsPerPage={cardsPerPage}
+                            totalCards={cards.length}
+                            setCurrentPage={setCurrentPage}
+                            currentPage={currentPage}
+                        />
                     </div>
                 </div>
             </div>

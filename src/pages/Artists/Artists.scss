@@ -2,7 +2,7 @@
     padding-top: 120px;
     background: url(../../images/artists/artists-bg.jpg) top center no-repeat;
     background-size: contain;
-    height: 100vh;
+    margin-bottom: 50px;
     .topBar {
         display: flex;
         justify-content: space-between;
@@ -49,6 +49,47 @@
             align-items: center;
             gap: 15px;
             animation: topBarSort 1s;
+        }
+    }
+    &__cards {
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(4, 189px);
+            gap: 40px;
+            justify-content: space-between;
+            animation: cardsList 1s;
+            margin-bottom: 45px;
+        }
+        &-pagination {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            justify-content: center;
+            .prev-arrow {
+                margin-right: 75px;
+            }
+            .next-arrow {
+                margin-left: 75px;
+            }
+            .prev-arrow,
+            .next-arrow {
+                display: flex;
+                align-items: center;
+            }
+            .pagination__number {
+                color: #787d82;
+                transition: all 0.3s;
+                padding: 5px 13px;
+                border-radius: 50%;
+                &.active {
+                    background-color: #dd0808;
+                    color: white;
+                }
+                &:hover {
+                    background-color: #dd0808;
+                    color: white;
+                }
+            }
         }
     }
 }

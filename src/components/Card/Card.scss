@@ -1,0 +1,72 @@
+.card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(8px);
+    max-width: 189px;
+    height: 270px;
+    border-radius: 17px;
+    position: relative;
+    z-index: 5;
+    &:hover {
+        .card-info {
+            display: flex;
+        }
+    }
+    &-sold {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(3, 3, 3, 0.7);
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        border-radius: 13px;
+        & span {
+            padding: 5px 20px;
+            color: white;
+            background-color: #dd0808;
+            border-radius: 17px;
+        }
+    }
+    &-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(3, 3, 3, 0.7);
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        display: none;
+        animation: cardInfo 0.3s;
+        border-radius: 13px;
+    }
+    &-name {
+        color: white;
+        letter-spacing: 0.05em;
+        padding-top: 20px;
+        margin-bottom: 110px;
+    }
+    &-price {
+        color: white;
+        font-size: 24px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        margin-bottom: 30px;
+    }
+    &-link {
+        font-family: "Inter", sans-serif;
+    }
+}
+
+@keyframes cardInfo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

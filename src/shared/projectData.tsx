@@ -3,6 +3,19 @@ import aboutItem2 from "../images/about/about-item2.png";
 import aboutItem3 from "../images/about/about-item3.png";
 import aboutItem4 from "../images/about/about-item4.png";
 
+import card1 from "../images/cards/card1.png";
+import card2 from "../images/cards/card2.png";
+import card3 from "../images/cards/card3.png";
+import card4 from "../images/cards/card4.png";
+import card5 from "../images/cards/card5.png";
+import card6 from "../images/cards/card6.png";
+import card7 from "../images/cards/card7.png";
+import card8 from "../images/cards/card8.png";
+import card9 from "../images/cards/card9.png";
+import card10 from "../images/cards/card10.png";
+import card11 from "../images/cards/card11.png";
+import card12 from "../images/cards/card12.png";
+
 export const points = [
     {
         id: 1,
@@ -310,5 +323,260 @@ export const aboutItem = [
                 height: "84",
             },
         ],
+    },
+];
+
+export const cards = [
+    {
+        id: 1,
+        name: "MS-BOMBER D3",
+        price: "$135 USD",
+        image: card1,
+        isSold: false,
+    },
+    {
+        id: 2,
+        name: "MS-BOMBER D3",
+        price: "$100 USD",
+        image: card2,
+        isSold: false,
+    },
+    {
+        id: 3,
+        name: "MS-BOMBER D3",
+        price: "$130 USD",
+        image: card3,
+        isSold: true,
+    },
+    {
+        id: 4,
+        name: "MS-BOMBER D3",
+        price: "$175 USD",
+        image: card4,
+        isSold: false,
+    },
+    {
+        id: 5,
+        name: "MS-BOMBER D3",
+        price: "$140 USD",
+        image: card5,
+        isSold: false,
+    },
+    {
+        id: 6,
+        name: "MS-BOMBER D3",
+        price: "$200 USD",
+        image: card6,
+        isSold: false,
+    },
+    {
+        id: 7,
+        name: "MS-BOMBER D3",
+        price: "$235 USD",
+        image: card7,
+        isSold: true,
+    },
+    {
+        id: 8,
+        name: "MS-BOMBER D3",
+        price: "$130 USD",
+        image: card8,
+        isSold: false,
+    },
+    {
+        id: 9,
+        name: "MS-BOMBER D3",
+        price: "$200 USD",
+        image: card9,
+        isSold: true,
+    },
+    {
+        id: 10,
+        name: "MS-BOMBER D3",
+        price: "$340 USD",
+        image: card10,
+        isSold: false,
+    },
+    {
+        id: 11,
+        name: "MS-BOMBER D3",
+        price: "$140 USD",
+        image: card11,
+        isSold: false,
+    },
+    {
+        id: 12,
+        name: "MS-BOMBER D3",
+        price: "$150 USD",
+        image: card12,
+        isSold: false,
+    },
+    {
+        id: 13,
+        name: "MS-BOMBER D3",
+        price: "$135 USD",
+        image: card1,
+        isSold: false,
+    },
+    {
+        id: 14,
+        name: "MS-BOMBER D3",
+        price: "$100 USD",
+        image: card2,
+        isSold: false,
+    },
+    {
+        id: 15,
+        name: "MS-BOMBER D3",
+        price: "$130 USD",
+        image: card3,
+        isSold: true,
+    },
+    {
+        id: 16,
+        name: "MS-BOMBER D3",
+        price: "$175 USD",
+        image: card5,
+        isSold: false,
+    },
+    {
+        id: 17,
+        name: "MS-BOMBER D3",
+        price: "$140 USD",
+        image: card12,
+        isSold: false,
+    },
+    {
+        id: 18,
+        name: "MS-BOMBER D3",
+        price: "$200 USD",
+        image: card6,
+        isSold: false,
+    },
+    {
+        id: 19,
+        name: "MS-BOMBER D3",
+        price: "$235 USD",
+        image: card7,
+        isSold: true,
+    },
+    {
+        id: 20,
+        name: "MS-BOMBER D3",
+        price: "$130 USD",
+        image: card1,
+        isSold: true,
+    },
+    {
+        id: 21,
+        name: "MS-BOMBER D3",
+        price: "$200 USD",
+        image: card9,
+        isSold: false,
+    },
+    {
+        id: 22,
+        name: "MS-BOMBER D3",
+        price: "$340 USD",
+        image: card10,
+        isSold: false,
+    },
+    {
+        id: 23,
+        name: "MS-BOMBER D3",
+        price: "$140 USD",
+        image: card11,
+        isSold: false,
+    },
+    {
+        id: 24,
+        name: "MS-BOMBER D3",
+        price: "$150 USD",
+        image: card12,
+        isSold: false,
+    },
+    {
+        id: 25,
+        name: "MS-BOMBER D3",
+        price: "$135 USD",
+        image: card1,
+        isSold: false,
+    },
+    {
+        id: 26,
+        name: "MS-BOMBER D3",
+        price: "$100 USD",
+        image: card2,
+        isSold: false,
+    },
+    {
+        id: 27,
+        name: "MS-BOMBER D3",
+        price: "$130 USD",
+        image: card3,
+        isSold: true,
+    },
+    {
+        id: 28,
+        name: "MS-BOMBER D3",
+        price: "$175 USD",
+        image: card4,
+        isSold: false,
+    },
+    {
+        id: 29,
+        name: "MS-BOMBER D3",
+        price: "$140 USD",
+        image: card5,
+        isSold: false,
+    },
+    {
+        id: 30,
+        name: "MS-BOMBER D3",
+        price: "$200 USD",
+        image: card6,
+        isSold: false,
+    },
+    {
+        id: 31,
+        name: "MS-BOMBER D3",
+        price: "$235 USD",
+        image: card7,
+        isSold: true,
+    },
+    {
+        id: 32,
+        name: "MS-BOMBER D3",
+        price: "$130 USD",
+        image: card8,
+        isSold: false,
+    },
+    {
+        id: 33,
+        name: "MS-BOMBER D3",
+        price: "$200 USD",
+        image: card9,
+        isSold: true,
+    },
+    {
+        id: 34,
+        name: "MS-BOMBER D3",
+        price: "$340 USD",
+        image: card10,
+        isSold: false,
+    },
+    {
+        id: 35,
+        name: "MS-BOMBER D3",
+        price: "$140 USD",
+        image: card11,
+        isSold: false,
+    },
+    {
+        id: 36,
+        name: "MS-BOMBER D3",
+        price: "$150 USD",
+        image: card12,
+        isSold: true,
     },
 ];
