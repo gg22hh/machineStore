@@ -1,0 +1,88 @@
+.artists {
+    padding-top: 120px;
+    background: url(../../images/artists/artists-bg.jpg) top center no-repeat;
+    background-size: contain;
+    height: 100vh;
+    .topBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        &__search {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(8px);
+            border-radius: 17px;
+            animation: topBarSearch 1s;
+            &-button {
+                padding: 5px 9px 2px;
+                background-color: #dd0808;
+                border-radius: 50%;
+            }
+            &-input {
+                padding: 4px 12px;
+                outline: unset;
+                font-family: "Inter", sans-serif;
+                color: white;
+                width: 175px;
+            }
+        }
+        &__filter {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            animation: topBarFilter 1s;
+            &-button {
+                color: #787d82;
+                padding: 5px 20px;
+                border-radius: 17px;
+                transition: all 0.3s;
+                &.active {
+                    background-color: #dd0808;
+                    color: white;
+                }
+            }
+        }
+        &__sort {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            animation: topBarSort 1s;
+        }
+    }
+}
+
+@keyframes topBarSearch {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes topBarFilter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes topBarSort {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .topBar__filter-button:hover {
+        background-color: #dd0808;
+        color: white;
+    }
+}
