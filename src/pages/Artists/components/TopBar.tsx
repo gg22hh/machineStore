@@ -73,12 +73,6 @@ export const TopBar: FC<TopBarProps> = ({
                     Sold out
                 </button>
             </div>
-            <div className="topBar__sort">
-                <button className="topBar__filter-button active">
-                    Sort by
-                </button>
-                <button className="topBar__filter-button">Featured</button>
-            </div>
         </div>
     );
 };

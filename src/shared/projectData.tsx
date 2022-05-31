@@ -333,6 +333,7 @@ export const items = [
         price: "$135 USD",
         image: card1,
         isSold: false,
+        author: "machine56",
     },
     {
         id: 2,
@@ -341,6 +342,7 @@ export const items = [
         image: card2,
         isSold: false,
         sale: true,
+        author: "machine56",
     },
     {
         id: 3,
@@ -348,6 +350,7 @@ export const items = [
         price: "$130 USD",
         image: card3,
         isSold: true,
+        author: "machine56",
     },
     {
         id: 4,
@@ -356,6 +359,7 @@ export const items = [
         image: card4,
         isSold: false,
         sale: true,
+        author: "machine56",
     },
     {
         id: 5,
@@ -364,6 +368,7 @@ export const items = [
         image: card5,
         isSold: false,
         sale: true,
+        author: "machine56",
     },
     {
         id: 6,
@@ -371,6 +376,7 @@ export const items = [
         price: "$200 USD",
         image: card6,
         isSold: false,
+        author: "machine56",
     },
     {
         id: 7,
@@ -378,6 +384,7 @@ export const items = [
         price: "$235 USD",
         image: card7,
         isSold: true,
+        author: "sayaWorks",
     },
     {
         id: 8,
@@ -386,6 +393,7 @@ export const items = [
         image: card8,
         isSold: false,
         sale: true,
+        author: "sayaWorks",
     },
     {
         id: 9,
@@ -393,6 +401,7 @@ export const items = [
         price: "$200 USD",
         image: card9,
         isSold: true,
+        author: "sayaWorks",
     },
     {
         id: 10,
@@ -401,6 +410,7 @@ export const items = [
         image: card10,
         isSold: false,
         sale: true,
+        author: "sayaWorks",
     },
     {
         id: 11,
@@ -409,6 +419,7 @@ export const items = [
         image: card11,
         isSold: false,
         sale: true,
+        author: "glitchNetwork",
     },
     {
         id: 12,
@@ -417,6 +428,7 @@ export const items = [
         image: card12,
         isSold: false,
         sale: true,
+        author: "glitchNetwork",
     },
     {
         id: 13,
@@ -425,6 +437,7 @@ export const items = [
         image: card1,
         isSold: false,
         sale: true,
+        author: "glitchNetwork",
     },
     {
         id: 14,
@@ -432,6 +445,7 @@ export const items = [
         price: "$100 USD",
         image: card2,
         isSold: false,
+        author: "glitchNetwork",
     },
     {
         id: 15,
@@ -439,6 +453,7 @@ export const items = [
         price: "$130 USD",
         image: card3,
         isSold: true,
+        author: "glitchNetwork",
     },
     {
         id: 16,
@@ -446,6 +461,7 @@ export const items = [
         price: "$175 USD",
         image: card5,
         isSold: false,
+        author: "glitchNetwork",
     },
     {
         id: 17,
@@ -453,6 +469,7 @@ export const items = [
         price: "$140 USD",
         image: card12,
         isSold: false,
+        author: "birdy",
     },
     {
         id: 18,
@@ -460,6 +477,7 @@ export const items = [
         price: "$200 USD",
         image: card6,
         isSold: false,
+        author: "birdy",
     },
     {
         id: 19,
@@ -467,6 +485,7 @@ export const items = [
         price: "$235 USD",
         image: card7,
         isSold: true,
+        author: "birdy",
     },
     {
         id: 20,
@@ -474,6 +493,7 @@ export const items = [
         price: "$130 USD",
         image: card1,
         isSold: true,
+        author: "birdy",
     },
     {
         id: 21,
@@ -481,6 +501,7 @@ export const items = [
         price: "$200 USD",
         image: card9,
         isSold: false,
+        author: "birdy",
     },
     {
         id: 22,
@@ -489,6 +510,7 @@ export const items = [
         image: card10,
         isSold: false,
         sale: true,
+        author: "eez",
     },
     {
         id: 23,
@@ -496,6 +518,7 @@ export const items = [
         price: "$140 USD",
         image: card11,
         isSold: false,
+        author: "eez",
     },
     {
         id: 24,
@@ -504,6 +527,7 @@ export const items = [
         image: card12,
         isSold: false,
         sale: true,
+        author: "eez",
     },
     {
         id: 25,
@@ -512,6 +536,7 @@ export const items = [
         image: card1,
         isSold: false,
         sale: true,
+        author: "glitchNetwork",
     },
     {
         id: 26,
@@ -519,6 +544,7 @@ export const items = [
         price: "$100 USD",
         image: card2,
         isSold: false,
+        author: "glitchNetwork",
     },
     {
         id: 27,
@@ -527,6 +553,7 @@ export const items = [
         image: card3,
         isSold: true,
         sale: true,
+        author: "kmr",
     },
     {
         id: 28,
@@ -534,6 +561,7 @@ export const items = [
         price: "$175 USD",
         image: card4,
         isSold: false,
+        author: "kmr",
     },
     {
         id: 29,
@@ -541,6 +569,7 @@ export const items = [
         price: "$140 USD",
         image: card5,
         isSold: false,
+        author: "kmr",
     },
     {
         id: 30,
@@ -548,6 +577,7 @@ export const items = [
         price: "$200 USD",
         image: card6,
         isSold: false,
+        author: "konrtolaltdelt",
     },
     {
         id: 31,
@@ -555,6 +585,7 @@ export const items = [
         price: "$235 USD",
         image: card7,
         isSold: true,
+        author: "konrtolaltdelt",
     },
     {
         id: 32,
@@ -562,6 +593,7 @@ export const items = [
         price: "$130 USD",
         image: card8,
         isSold: false,
+        author: "konrtolaltdelt",
     },
     {
         id: 33,
@@ -569,6 +601,7 @@ export const items = [
         price: "$200 USD",
         image: card9,
         isSold: true,
+        author: "konrtolaltdelt",
     },
     {
         id: 34,
@@ -576,6 +609,7 @@ export const items = [
         price: "$340 USD",
         image: card10,
         isSold: false,
+        author: "konrtolaltdelt",
     },
     {
         id: 35,
@@ -583,6 +617,7 @@ export const items = [
         price: "$140 USD",
         image: card11,
         isSold: false,
+        author: "birdy",
     },
     {
         id: 36,
@@ -590,5 +625,6 @@ export const items = [
         price: "$150 USD",
         image: card12,
         isSold: true,
+        author: "glitchNetwork",
     },
 ];

@@ -1,13 +1,15 @@
 .artists {
     padding-top: 120px;
-    background: url(../../images/artists/artists-bg.jpg) top center no-repeat;
+    background: url(../../images/artists/artists-bg.jpg) top no-repeat;
     background-size: contain;
     margin-bottom: 50px;
+    min-height: 100vh;
     .topBar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-size: 18px;
+        margin-bottom: 50px;
         &__search {
             display: flex;
             align-items: center;
@@ -44,18 +46,40 @@
                 }
             }
         }
-        &__sort {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            animation: topBarSort 1s;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__filters {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        animation: sidebarFilters 1s;
+        &-title {
+            font-size: 24px;
+            line-height: 35px;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+        }
+        &-item {
+            color: #787d82;
+            text-align: left;
+            padding: 6px 26px;
+            border-radius: 17px;
+            transition: all 0.2s;
+            &.active {
+                background: #dd0808;
+                color: white;
+            }
         }
     }
     &__cards {
         &-list {
             display: grid;
             grid-template-columns: repeat(4, 189px);
-            gap: 40px;
+            gap: 40px 60px;
             justify-content: space-between;
             animation: cardsList 1s;
             margin-bottom: 45px;
@@ -105,10 +129,10 @@
 
 @keyframes topBarFilter {
     0% {
-        opacity: 0;
+        transform: translateX(200%);
     }
     100% {
-        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -130,9 +154,22 @@
     }
 }
 
+@keyframes sidebarFilters {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 @media (min-width: 768px) {
     .topBar__filter-button:hover {
         background-color: #dd0808;
+        color: white;
+    }
+    .artists__filters-item:hover {
+        background: #dd0808;
         color: white;
     }
 }
