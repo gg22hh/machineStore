@@ -16,15 +16,22 @@ export const Pagination: FC<PaginationProps> = ({
     currentPage,
 }) => {
     const pageNumbers = [];
+    const scroll = () => window.scrollTo({ top: 0 });
 
     for (let i = 1; i <= Math.ceil(totalCards / cardsPerPage); i++) {
         pageNumbers.push(i);
     }
 
+    const setPage = (num: number) => {
+        scroll();
+        setCurrentPage(num);
+    };
+
     const nextPage = () => {
         if (currentPage === pageNumbers.length) {
             return currentPage;
         } else {
+            scroll();
             return setCurrentPage(currentPage + 1);
         }
     };
@@ -33,6 +40,7 @@ export const Pagination: FC<PaginationProps> = ({
         if (currentPage === 1) {
             return currentPage;
         } else {
+            scroll();
             return setCurrentPage(currentPage - 1);
         }
     };
@@ -50,7 +58,7 @@ export const Pagination: FC<PaginationProps> = ({
                             : "pagination__number"
                     }
                     key={number}
-                    onClick={() => setCurrentPage(number)}
+                    onClick={() => setPage(number)}
                 >
                     {number}
                 </button>

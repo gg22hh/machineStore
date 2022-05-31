@@ -326,7 +326,7 @@ export const aboutItem = [
     },
 ];
 
-export const cards = [
+export const items = [
     {
         id: 1,
         name: "MS-BOMBER D3",
@@ -340,6 +340,7 @@ export const cards = [
         price: "$100 USD",
         image: card2,
         isSold: false,
+        sale: true,
     },
     {
         id: 3,
@@ -354,6 +355,7 @@ export const cards = [
         price: "$175 USD",
         image: card4,
         isSold: false,
+        sale: true,
     },
     {
         id: 5,
@@ -361,6 +363,7 @@ export const cards = [
         price: "$140 USD",
         image: card5,
         isSold: false,
+        sale: true,
     },
     {
         id: 6,
@@ -382,6 +385,7 @@ export const cards = [
         price: "$130 USD",
         image: card8,
         isSold: false,
+        sale: true,
     },
     {
         id: 9,
@@ -396,6 +400,7 @@ export const cards = [
         price: "$340 USD",
         image: card10,
         isSold: false,
+        sale: true,
     },
     {
         id: 11,
@@ -403,6 +408,7 @@ export const cards = [
         price: "$140 USD",
         image: card11,
         isSold: false,
+        sale: true,
     },
     {
         id: 12,
@@ -410,6 +416,7 @@ export const cards = [
         price: "$150 USD",
         image: card12,
         isSold: false,
+        sale: true,
     },
     {
         id: 13,
@@ -417,6 +424,7 @@ export const cards = [
         price: "$135 USD",
         image: card1,
         isSold: false,
+        sale: true,
     },
     {
         id: 14,
@@ -480,6 +488,7 @@ export const cards = [
         price: "$340 USD",
         image: card10,
         isSold: false,
+        sale: true,
     },
     {
         id: 23,
@@ -494,6 +503,7 @@ export const cards = [
         price: "$150 USD",
         image: card12,
         isSold: false,
+        sale: true,
     },
     {
         id: 25,
@@ -501,6 +511,7 @@ export const cards = [
         price: "$135 USD",
         image: card1,
         isSold: false,
+        sale: true,
     },
     {
         id: 26,
@@ -515,6 +526,7 @@ export const cards = [
         price: "$130 USD",
         image: card3,
         isSold: true,
+        sale: true,
     },
     {
         id: 28,
