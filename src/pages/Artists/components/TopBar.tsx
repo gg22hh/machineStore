@@ -11,17 +11,21 @@ type filtersObjTypes = {
 interface TopBarProps {
     filtersObj: filtersObjTypes;
     filters: filtersObjTypes;
-    setFilters: (filtersObjTypes) => void;
+    value: string;
+    setFilters: (obj: filtersObjTypes) => void;
+    setValue: (e) => void;
 }
 
 export const TopBar: FC<TopBarProps> = ({
     filtersObj,
     filters,
+    value,
     setFilters,
+    setValue,
 }) => {
     return (
         <div className="topBar">
-            <div className="topBar__search">
+            <form className="topBar__search">
                 <button className="topBar__search-button">
                     <img src={searchIcon} alt="search icon" />
                 </button>
@@ -29,8 +33,10 @@ export const TopBar: FC<TopBarProps> = ({
                     className="topBar__search-input"
                     type="text"
                     placeholder="Search..."
+                    value={value}
+                    onChange={(e) => setValue(e.target.value)}
                 />
-            </div>
+            </form>
             <div className="topBar__filter">
                 <button
                     className={

@@ -35,7 +35,15 @@ export const Artists: FC = () => {
     });
     const [filtredCards, setFiltredCards] = useState(items);
     const [cards, setCards] = useState(filtredCards);
+    const [value, setValue] = useState<string>("");
     useEffect(() => {
+        const searchedPosts = filtredCards.filter((card) => {
+            return card.name.toLowerCase().includes(value.toLowerCase());
+        });
+        setCards(searchedPosts);
+    }, [value]);
+    useEffect(() => {
+        setValue("");
         if (topBarFilters.all) {
             setCards(filtredCards);
         } else if (topBarFilters.soldOut) {
@@ -61,6 +69,7 @@ export const Artists: FC = () => {
     }, [topBarFilters]);
 
     useEffect(() => {
+        setValue("");
         setCurrentPage(1);
         if (sideBarFilters.all) {
             setFiltredCards(items);
@@ -130,6 +139,8 @@ export const Artists: FC = () => {
                     filtersObj={tobBarFiltersObj}
                     filters={topBarFilters}
                     setFilters={setTopBarFilters}
+                    value={value}
+                    setValue={setValue}
                 />
                 <div className="artists__content">
                     <Sidebar
@@ -139,7 +150,11 @@ export const Artists: FC = () => {
                     />
                     <div className="artists__cards">
                         <div className="artists__cards-list">
-                            {cards.length === 0 ? <h1>Empty</h1> : cardList}
+                            {cards.length === 0 ? (
+                                <h1 className="artists__cards-empty">Empty</h1>
+                            ) : (
+                                cardList
+                            )}
                         </div>
                         {cards.length > 12 && (
                             <div className="artists__cards-pagination">

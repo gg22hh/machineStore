@@ -337,7 +337,7 @@ export const items = [
     },
     {
         id: 2,
-        name: "MS-BOMBER D3",
+        name: "HELMET",
         price: "$100 USD",
         image: card2,
         isSold: false,
@@ -346,7 +346,7 @@ export const items = [
     },
     {
         id: 3,
-        name: "MS-BOMBER D3",
+        name: "HELMET",
         price: "$130 USD",
         image: card3,
         isSold: true,
