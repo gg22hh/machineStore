@@ -1,126 +1,57 @@
 import React, { FC, useEffect, useState } from "react";
 import "./Artists.scss";
 import { Card } from "../../components/Card/Card";
-import { items } from "../../shared/projectData";
+import {
+    artistsSideBarObj,
+    items,
+    tobBarFiltersObj,
+} from "../../shared/projectData";
 import { Pagination } from "./components/Pagination";
 import { TopBar } from "./components/TopBar";
 import { Sidebar } from "./components/Sidebar";
+import {
+    useArtistsFilters,
+    useLiveSearch,
+    usePagination,
+    useTopBarFilters,
+} from "../../shared/hooks";
+import { ICard, sideBarFiltersTypes, topBarFiltersTypes } from "../../types";
 
 export const Artists: FC = () => {
-    const [currentPage, setCurrentPage] = useState(1);
-    const [cardsPerPage] = useState(12);
-    const tobBarFiltersObj = {
-        all: false,
-        sale: false,
-        inStock: false,
-        soldOut: false,
-    };
-    const sideBarFiltersObj = {
-        all: false,
-        machine56: false,
-        sayaWorks: false,
-        glitchNetwork: false,
-        birdy: false,
-        eez: false,
-        kmr: false,
-        konrtolaltdelt: false,
-    };
-    const [topBarFilters, setTopBarFilters] = useState({
+    const [topBarFilters, setTopBarFilters] = useState<topBarFiltersTypes>({
         ...tobBarFiltersObj,
         all: true,
     });
-    const [sideBarFilters, setSideBarFilters] = useState({
-        ...sideBarFiltersObj,
+    const [sideBarFilters, setSideBarFilters] = useState<sideBarFiltersTypes>({
+        ...artistsSideBarObj,
         all: true,
     });
-    const [filtredCards, setFiltredCards] = useState(items);
-    const [cards, setCards] = useState(filtredCards);
-    const [value, setValue] = useState<string>("");
-    useEffect(() => {
-        const searchedPosts = filtredCards.filter((card) => {
-            return card.name.toLowerCase().includes(value.toLowerCase());
-        });
-        setCards(searchedPosts);
-    }, [value]);
-    useEffect(() => {
-        setValue("");
-        if (topBarFilters.all) {
-            setCards(filtredCards);
-        } else if (topBarFilters.soldOut) {
-            const filtredItems = filtredCards.filter(
-                (item) => item.isSold === true
-            );
-            setCards(filtredItems);
-            setCurrentPage(1);
-        } else if (topBarFilters.inStock) {
-            const filtredItems = filtredCards.filter(
-                (item) => item.isSold !== true
-            );
-            setCards(filtredItems);
-            setCurrentPage(1);
-        } else if (topBarFilters.sale) {
-            const itemsInStock = filtredCards.filter(
-                (item) => item.isSold !== true
-            );
-            const filtredItems = itemsInStock.filter((item) => item.sale);
-            setCards(filtredItems);
-            setCurrentPage(1);
-        }
-    }, [topBarFilters]);
+    const [filtredCards, setFiltredCards] = useState<ICard[]>(items);
+    const [cards, setCards] = useState<ICard[]>(filtredCards);
+    const { currentPage, setCurrentPage, currentCard, cardsPerPage } =
+        usePagination(cards);
+    const { value, setValue } = useLiveSearch(filtredCards, setCards);
 
-    useEffect(() => {
-        setValue("");
-        setCurrentPage(1);
-        if (sideBarFilters.all) {
-            setFiltredCards(items);
-            setTopBarFilters({ ...tobBarFiltersObj, all: true });
-        } else if (sideBarFilters.machine56) {
-            const filtred = items.filter((item) => item.author === "machine56");
-            setFiltredCards(filtred);
-            setCards(filtred);
-            setTopBarFilters({ ...tobBarFiltersObj, all: true });
-        } else if (sideBarFilters.sayaWorks) {
-            const filtred = items.filter((item) => item.author === "sayaWorks");
-            setFiltredCards(filtred);
-            setCards(filtred);
-            setTopBarFilters({ ...tobBarFiltersObj, all: true });
-        } else if (sideBarFilters.glitchNetwork) {
-            const filtred = items.filter(
-                (item) => item.author === "glitchNetwork"
-            );
-            setFiltredCards(filtred);
-            setCards(filtred);
-            setTopBarFilters({ ...tobBarFiltersObj, all: true });
-        } else if (sideBarFilters.birdy) {
-            const filtred = items.filter((item) => item.author === "birdy");
-            setFiltredCards(filtred);
-            setCards(filtred);
-            setTopBarFilters({ ...tobBarFiltersObj, all: true });
-        } else if (sideBarFilters.eez) {
-            const filtred = items.filter((item) => item.author === "eez");
-            setFiltredCards(filtred);
-            setCards(filtred);
-            setTopBarFilters({ ...tobBarFiltersObj, all: true });
-        } else if (sideBarFilters.kmr) {
-            const filtred = items.filter((item) => item.author === "kmr");
-            setFiltredCards(filtred);
-            setCards(filtred);
-            setTopBarFilters({ ...tobBarFiltersObj, all: true });
-        } else if (sideBarFilters.konrtolaltdelt) {
-            const filtred = items.filter(
-                (item) => item.author === "konrtolaltdelt"
-            );
-            setFiltredCards(filtred);
-            setCards(filtred);
-            setTopBarFilters({ ...tobBarFiltersObj, all: true });
-        }
-    }, [sideBarFilters]);
+    useTopBarFilters(
+        topBarFilters,
+        setCards,
+        filtredCards,
+        setValue,
+        setCurrentPage
+    );
 
-    const lastIndex = currentPage * cardsPerPage;
-    const firstIndex = lastIndex - cardsPerPage;
-    const currentCard = cards.slice(firstIndex, lastIndex);
+    useArtistsFilters(
+        setCards,
+        setValue,
+        setCurrentPage,
+        sideBarFilters,
+        items,
+        setFiltredCards,
+        setTopBarFilters,
+        tobBarFiltersObj
+    );
 
-    const cardList = currentCard.map((card) => {
+    const cardList = currentCard.map((card: ICard) => {
         return (
             <Card
                 key={card.id}
@@ -144,7 +75,7 @@ export const Artists: FC = () => {
                 />
                 <div className="artists__content">
                     <Sidebar
-                        sideBarFiltersObj={sideBarFiltersObj}
+                        sideBarFiltersObj={artistsSideBarObj}
                         sideBarFilters={sideBarFilters}
                         setSideBarFilters={setSideBarFilters}
                     />

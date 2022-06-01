@@ -16,6 +16,24 @@ import card10 from "../images/cards/card10.png";
 import card11 from "../images/cards/card11.png";
 import card12 from "../images/cards/card12.png";
 
+export const tobBarFiltersObj = {
+    all: false,
+    sale: false,
+    inStock: false,
+    soldOut: false,
+};
+
+export const artistsSideBarObj = {
+    all: false,
+    machine56: false,
+    sayaWorks: false,
+    glitchNetwork: false,
+    birdy: false,
+    eez: false,
+    kmr: false,
+    konrtolaltdelt: false,
+};
+
 export const points = [
     {
         id: 1,
