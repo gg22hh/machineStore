@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, useState } from "react";
 import "./Artists.scss";
 import { Card } from "../../components/Card/Card";
 import {
@@ -59,6 +59,7 @@ export const Artists: FC = () => {
                 price={card.price}
                 image={card.image}
                 isSold={card.isSold}
+                id={card.id}
             />
         );
     });

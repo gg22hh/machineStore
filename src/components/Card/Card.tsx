@@ -1,4 +1,6 @@
 import React, { FC } from "react";
+import { useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Card.scss";
 
 interface CardProps {
@@ -6,11 +8,17 @@ interface CardProps {
     image: string;
     price: string;
     isSold: boolean;
+    id: number;
 }
 
-export const Card: FC<CardProps> = ({ name, price, image, isSold }) => {
+export const Card: FC<CardProps> = ({ name, price, image, isSold, id }) => {
+    const location = useLocation().pathname;
+    const navigation = useNavigate();
     return (
-        <div className="card">
+        <button
+            onClick={() => navigation(`${location}/item${id}`)}
+            className="card"
+        >
             <img src={image} alt="card" />
 
             {isSold ? (
@@ -24,6 +32,6 @@ export const Card: FC<CardProps> = ({ name, price, image, isSold }) => {
                     <div className="card-link">View product</div>
                 </div>
             )}
-        </div>
+        </button>
     );
 };
