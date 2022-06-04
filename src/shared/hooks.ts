@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { ICard, sideBarFiltersTypes, topBarFiltersTypes } from "../types";
 
 export const usePagination = (cards: ICard[]) => {
@@ -127,4 +128,12 @@ export const useArtistsFilters = (
         setTopBarFilters,
         tobBarFiltersObj,
     ]);
+};
+
+export const useScrollToTop = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, [location]);
 };

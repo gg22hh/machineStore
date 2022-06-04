@@ -107,3 +107,8 @@ body {
 .js-focus-visible :focus:not(.focus-visible) {
     outline: none;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: unset !important;
+}

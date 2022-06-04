@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface topBarFiltersTypes {
     all: boolean;
     sale: boolean;
@@ -26,4 +24,9 @@ export interface ICard {
     isSold: boolean;
     author: string;
     sale?: boolean;
+    cardInfoMini1: string;
+    cardInfoMini2: string;
+    cardInfoMini3: string;
+    text1: string;
+    text2: string;
 }

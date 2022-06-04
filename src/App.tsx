@@ -10,13 +10,25 @@ import { Contacts } from "./pages/Contacts/Contacts";
 import Home from "./pages/Home/Home";
 import { NoMatch } from "./pages/NoMatch/NoMatch";
 import { Products } from "./pages/Products/Products";
+import { useScrollToTop } from "./shared/hooks";
 import { items } from "./shared/projectData";
 
 function App() {
+    useScrollToTop();
     const location = useLocation().pathname;
 
     const cardsRoutesList = items.map((card) => {
-        return <CardInfo name={card.name} />;
+        return (
+            <CardInfo
+                name={card.name}
+                price={card.price}
+                cardInfoMini1={card.cardInfoMini1}
+                cardInfoMini2={card.cardInfoMini2}
+                cardInfoMini3={card.cardInfoMini3}
+                text1={card.text1}
+                text2={card.text2}
+            />
+        );
     });
 
     const routesList = cardsRoutesList.map((page, index) => {
