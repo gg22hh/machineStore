@@ -4,9 +4,12 @@
     background-size: contain;
     min-height: 100vh;
     margin-bottom: 50px;
+    animation: cardInfo 2s;
     &__data {
         line-height: 23px;
         max-width: 280px;
+        animation: cardInfoData 1s;
+        grid-area: data;
         &-back {
             font-size: 18px;
             line-height: 26px;
@@ -45,6 +48,8 @@
         background: rgba(255, 255, 255, 0.02);
         backdrop-filter: blur(8px);
         border-radius: 25px;
+        animation: cardInfoSlider 1s;
+        grid-area: slider;
         &-item {
             margin: 0 auto;
             display: block;
@@ -67,11 +72,15 @@
         }
     }
     &__inner {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        grid-template-areas: "data slider about";
     }
     &__about {
         max-width: 271px;
+        animation: cardInfoAbout 1s;
+        grid-area: about;
         &-title {
             font-size: 24px;
             line-height: 35px;
@@ -157,6 +166,7 @@
             background: rgba(255, 255, 255, 0.02);
             backdrop-filter: blur(8px);
             border-radius: 23px;
+            transition: all 0.2s;
         }
     }
     &__chart {
@@ -166,6 +176,67 @@
         background: rgba(255, 255, 255, 0.02);
         backdrop-filter: blur(8px);
         border-radius: 23px;
+        transition: all 0.2s;
+    }
+}
+
+@keyframes cardInfo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes cardInfoData {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes cardInfoAbout {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes cardInfoSlider {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1245px) {
+    .cardInfo {
+        background-size: auto;
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                "slider slider"
+                "data about";
+            justify-content: center;
+        }
+        &__slider {
+            margin: 0 auto;
+        }
+        &__data {
+            margin-left: auto;
+            max-width: 400px;
+        }
+        &__about {
+            margin-right: auto;
+            max-width: 400px;
+        }
     }
 }
 
@@ -173,5 +244,48 @@
     .cardInfo__size-item:hover {
         background-color: #dd0808;
         color: white;
+    }
+    .cardInfo__chart:hover,
+    .cardInfo__purchase-button:hover {
+        background-color: #fff;
+        color: black;
+    }
+}
+
+@media (max-width: 665px) {
+    .cardInfo__slider {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cardInfo {
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas:
+                "data"
+                "slider"
+                "about";
+        }
+        &__data {
+            margin: 0 auto;
+            text-align: center;
+            &-back {
+                margin: 0 0 20px 0;
+            }
+        }
+        &__about {
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__size ul {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .cardInfo__slider {
+        max-width: 300px;
     }
 }
