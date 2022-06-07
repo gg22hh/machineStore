@@ -6,7 +6,7 @@ import "./Card.scss";
 interface CardProps {
     name: string;
     image: string;
-    price: string;
+    price: number;
     isSold: boolean;
     id: number;
 }
@@ -28,7 +28,7 @@ export const Card: FC<CardProps> = ({ name, price, image, isSold, id }) => {
             ) : (
                 <div className="card-info">
                     <div className="card-name">{name}</div>
-                    <div className="card-price">{price}</div>
+                    <div className="card-price">{`$${price} USD`}</div>
                     <div className="card-link">View product</div>
                 </div>
             )}

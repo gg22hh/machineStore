@@ -19,7 +19,7 @@ export interface sideBarFiltersTypes {
 export interface ICard {
     id: number;
     name: string;
-    price: string;
+    price: number;
     image: string;
     isSold: boolean;
     author: string;
@@ -29,4 +29,13 @@ export interface ICard {
     cardInfoMini3: string;
     text1: string;
     text2: string;
+}
+
+export interface ICartItem {
+    cartId: number;
+    cartSize: string;
+    cartTotalPrice: number;
+    cartPrice: number;
+    cartName: string;
+    cartImage: string;
 }

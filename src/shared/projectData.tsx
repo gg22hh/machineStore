@@ -351,7 +351,7 @@ export const items = [
     {
         id: 1,
         name: "MS-BOMBER D3",
-        price: "$135 USD",
+        price: 135,
         image: card1,
         isSold: false,
         author: "machine56",
@@ -364,7 +364,7 @@ export const items = [
     {
         id: 2,
         name: "HELMET",
-        price: "$100 USD",
+        price: 100,
         image: card2,
         isSold: false,
         sale: true,
@@ -378,7 +378,7 @@ export const items = [
     {
         id: 3,
         name: "HELMET",
-        price: "$130 USD",
+        price: 130,
         image: card3,
         isSold: true,
         author: "machine56",
@@ -391,7 +391,7 @@ export const items = [
     {
         id: 4,
         name: "MS-BOMBER D3",
-        price: "$175 USD",
+        price: 175,
         image: card4,
         isSold: false,
         sale: true,
@@ -405,7 +405,7 @@ export const items = [
     {
         id: 5,
         name: "MS-BOMBER D3",
-        price: "$140 USD",
+        price: 140,
         image: card5,
         isSold: false,
         sale: true,
@@ -419,7 +419,7 @@ export const items = [
     {
         id: 6,
         name: "MS-BOMBER D3",
-        price: "$200 USD",
+        price: 200,
         image: card6,
         isSold: false,
         author: "machine56",
@@ -432,7 +432,7 @@ export const items = [
     {
         id: 7,
         name: "MS-BOMBER D3",
-        price: "$235 USD",
+        price: 235,
         image: card7,
         isSold: true,
         author: "sayaWorks",
@@ -445,7 +445,7 @@ export const items = [
     {
         id: 8,
         name: "MS-BOMBER D3",
-        price: "$130 USD",
+        price: 130,
         image: card8,
         isSold: false,
         sale: true,
@@ -459,7 +459,7 @@ export const items = [
     {
         id: 9,
         name: "MS-BOMBER D3",
-        price: "$200 USD",
+        price: 200,
         image: card9,
         isSold: true,
         author: "sayaWorks",
@@ -472,7 +472,7 @@ export const items = [
     {
         id: 10,
         name: "MS-BOMBER D3",
-        price: "$340 USD",
+        price: 340,
         image: card10,
         isSold: false,
         sale: true,
@@ -486,7 +486,7 @@ export const items = [
     {
         id: 11,
         name: "MS-BOMBER D3",
-        price: "$140 USD",
+        price: 140,
         image: card11,
         isSold: false,
         sale: true,
@@ -500,7 +500,7 @@ export const items = [
     {
         id: 12,
         name: "MS-BOMBER D3",
-        price: "$150 USD",
+        price: 150,
         image: card12,
         isSold: false,
         sale: true,
@@ -514,7 +514,7 @@ export const items = [
     {
         id: 13,
         name: "MS-BOMBER D3",
-        price: "$135 USD",
+        price: 135,
         image: card1,
         isSold: false,
         sale: true,
@@ -528,7 +528,7 @@ export const items = [
     {
         id: 14,
         name: "MS-BOMBER D3",
-        price: "$100 USD",
+        price: 100,
         image: card2,
         isSold: false,
         author: "glitchNetwork",
@@ -541,7 +541,7 @@ export const items = [
     {
         id: 15,
         name: "MS-BOMBER D3",
-        price: "$130 USD",
+        price: 130,
         image: card3,
         isSold: true,
         author: "glitchNetwork",
@@ -554,7 +554,7 @@ export const items = [
     {
         id: 16,
         name: "MS-BOMBER D3",
-        price: "$175 USD",
+        price: 175,
         image: card5,
         isSold: false,
         author: "glitchNetwork",
@@ -567,7 +567,7 @@ export const items = [
     {
         id: 17,
         name: "MS-BOMBER D3",
-        price: "$140 USD",
+        price: 140,
         image: card12,
         isSold: false,
         author: "birdy",
@@ -580,7 +580,7 @@ export const items = [
     {
         id: 18,
         name: "MS-BOMBER D3",
-        price: "$200 USD",
+        price: 200,
         image: card6,
         isSold: false,
         author: "birdy",
@@ -593,7 +593,7 @@ export const items = [
     {
         id: 19,
         name: "MS-BOMBER D3",
-        price: "$235 USD",
+        price: 235,
         image: card7,
         isSold: true,
         author: "birdy",
@@ -606,7 +606,7 @@ export const items = [
     {
         id: 20,
         name: "MS-BOMBER D3",
-        price: "$130 USD",
+        price: 130,
         image: card1,
         isSold: true,
         author: "birdy",
@@ -619,7 +619,7 @@ export const items = [
     {
         id: 21,
         name: "MS-BOMBER D3",
-        price: "$200 USD",
+        price: 200,
         image: card9,
         isSold: false,
         author: "birdy",
@@ -634,7 +634,7 @@ export const items = [
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
         name: "MS-BOMBER D3",
-        price: "$340 USD",
+        price: 340,
         image: card10,
         isSold: false,
         sale: true,
@@ -648,7 +648,7 @@ export const items = [
         name: "MS-BOMBER D3",
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
-        price: "$140 USD",
+        price: 140,
         image: card11,
         isSold: false,
         author: "eez",
@@ -659,7 +659,7 @@ export const items = [
     {
         id: 24,
         name: "MS-BOMBER D3",
-        price: "$150 USD",
+        price: 150,
         image: card12,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
@@ -673,7 +673,7 @@ export const items = [
     {
         id: 25,
         name: "MS-BOMBER D3",
-        price: "$135 USD",
+        price: 135,
         image: card1,
         isSold: false,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
@@ -687,7 +687,7 @@ export const items = [
     {
         id: 26,
         name: "MS-BOMBER D3",
-        price: "$100 USD",
+        price: 100,
         image: card2,
         isSold: false,
         author: "glitchNetwork",
@@ -700,7 +700,7 @@ export const items = [
     {
         id: 27,
         name: "MS-BOMBER D3",
-        price: "$130 USD",
+        price: 130,
         image: card3,
         isSold: true,
         sale: true,
@@ -714,7 +714,7 @@ export const items = [
     {
         id: 28,
         name: "MS-BOMBER D3",
-        price: "$175 USD",
+        price: 175,
         image: card4,
         isSold: false,
         author: "kmr",
@@ -727,7 +727,7 @@ export const items = [
     {
         id: 29,
         name: "MS-BOMBER D3",
-        price: "$140 USD",
+        price: 140,
         image: card5,
         isSold: false,
         author: "kmr",
@@ -740,7 +740,7 @@ export const items = [
     {
         id: 30,
         name: "MS-BOMBER D3",
-        price: "$200 USD",
+        price: 130,
         image: card6,
         isSold: false,
         author: "konrtolaltdelt",
@@ -753,7 +753,7 @@ export const items = [
     {
         id: 31,
         name: "MS-BOMBER D3",
-        price: "$235 USD",
+        price: 235,
         image: card7,
         isSold: true,
         author: "konrtolaltdelt",
@@ -766,7 +766,7 @@ export const items = [
     {
         id: 32,
         name: "MS-BOMBER D3",
-        price: "$130 USD",
+        price: 130,
         image: card8,
         isSold: false,
         author: "konrtolaltdelt",
@@ -779,7 +779,7 @@ export const items = [
     {
         id: 33,
         name: "MS-BOMBER D3",
-        price: "$200 USD",
+        price: 200,
         image: card9,
         isSold: true,
         author: "konrtolaltdelt",
@@ -792,7 +792,7 @@ export const items = [
     {
         id: 34,
         name: "MS-BOMBER D3",
-        price: "$340 USD",
+        price: 340,
         image: card10,
         isSold: false,
         author: "konrtolaltdelt",
@@ -805,7 +805,7 @@ export const items = [
     {
         id: 35,
         name: "MS-BOMBER D3",
-        price: "$140 USD",
+        price: 140,
         image: card11,
         isSold: false,
         author: "birdy",
@@ -818,7 +818,7 @@ export const items = [
     {
         id: 36,
         name: "MS-BOMBER D3",
-        price: "$150 USD",
+        price: 150,
         image: card12,
         isSold: true,
         author: "glitchNetwork",

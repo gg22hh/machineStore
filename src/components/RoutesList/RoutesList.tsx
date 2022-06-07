@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { About } from "../../pages/About/About";
 import { Artists } from "../../pages/Artists/Artists";
 import { CardInfo } from "../../pages/CardInfo/CardInfo";
+import { Cart } from "../../pages/Cart/Cart";
 import { Contacts } from "../../pages/Contacts/Contacts";
 import Home from "../../pages/Home/Home";
 import { NoMatch } from "../../pages/NoMatch/NoMatch";
@@ -22,6 +23,7 @@ export const RoutesList: FC = () => {
                 cardInfoMini3={card.cardInfoMini3}
                 text1={card.text1}
                 text2={card.text2}
+                image={card.image}
             />
         );
     });
@@ -45,6 +47,7 @@ export const RoutesList: FC = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/artists" element={<Artists />} />
+                <Route path="/cart" element={<Cart />} />
                 {routesList}
                 <Route path="*" element={<NoMatch />} />
             </Routes>
