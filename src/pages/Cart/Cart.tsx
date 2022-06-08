@@ -32,9 +32,17 @@ export const Cart: FC = () => {
     return (
         <div className="cart">
             <div className="container">
-                <div className="cart__list">{cartList}</div>
+                {cart.length ? (
+                    <div className="cart__list">{cartList}</div>
+                ) : (
+                    <div className="cart__empty">There is no items in cart</div>
+                )}
+
                 <div className="cart__buttons">
-                    <div onClick={() => navigate(-1)} className="cart__back">
+                    <div
+                        onClick={() => navigate("/products")}
+                        className="cart__back"
+                    >
                         <Button>Continue shopping</Button>
                     </div>
                     <div className="cart__chekout">

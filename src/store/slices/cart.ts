@@ -1,18 +1,7 @@
-import card1 from "../../images/cards/card1.png";
-
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState = {
-    cart: [
-        {
-            cartId: 0.606636507063254,
-            cartImage: card1,
-            cartName: "MS-BOMBER D3",
-            cartPrice: 135,
-            cartSize: "S",
-            cartTotalPrice: 135,
-        },
-    ],
+    cart: [],
 };
 
 const cartSlice = createSlice({
