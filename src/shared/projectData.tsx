@@ -37,6 +37,29 @@ export const artistsSideBarObj = {
     konrtolaltdelt: false,
 };
 
+export const productsSideBarObj = {
+    all: false,
+    jackets: false,
+    hoodies: false,
+    sweatshirts: false,
+    tees: false,
+    pants: false,
+    backpacks: false,
+    hoodiesTshirt: false,
+    vaultHunters: false,
+    boneheadHelmets: false,
+    demonPlateSeries: false,
+    hfBat: false,
+    masks: false,
+    moleskineJackets: false,
+    wallArts: false,
+    figures: false,
+    stickerPacksters: false,
+    vectorPacksfBat: false,
+    posters: false,
+    fonts: false,
+};
+
 export const points = [
     {
         id: 1,
@@ -360,6 +383,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "jackets",
+        accessories: "boneheadHelmets",
     },
     {
         id: 2,
@@ -374,6 +399,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "jackets",
+        accessories: "boneheadHelmets",
     },
     {
         id: 3,
@@ -387,6 +414,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "jackets",
+        accessories: "boneheadHelmets",
     },
     {
         id: 4,
@@ -401,6 +430,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "jackets",
+        accessories: "boneheadHelmets",
     },
     {
         id: 5,
@@ -415,6 +446,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "jackets",
+        accessories: "demonPlateSeries",
     },
     {
         id: 6,
@@ -428,6 +461,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "hoodies",
+        accessories: "demonPlateSeries",
     },
     {
         id: 7,
@@ -441,6 +476,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "hoodies",
+        accessories: "demonPlateSeries",
     },
     {
         id: 8,
@@ -455,6 +492,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "hoodies",
+        accessories: "hfBat",
     },
     {
         id: 9,
@@ -468,6 +507,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "hoodies",
+        accessories: "hfBat",
     },
     {
         id: 10,
@@ -482,6 +523,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "hoodies",
+        accessories: "hfBat",
     },
     {
         id: 11,
@@ -496,6 +539,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "hoodies",
+        accessories: "hfBat",
     },
     {
         id: 12,
@@ -510,6 +555,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "sweatshirts",
+        accessories: "hfBat",
     },
     {
         id: 13,
@@ -524,6 +571,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "sweatshirts",
+        accessories: "masks",
     },
     {
         id: 14,
@@ -537,6 +586,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "sweatshirts",
+        accessories: "masks",
     },
     {
         id: 15,
@@ -550,6 +601,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "sweatshirts",
+        accessories: "masks",
     },
     {
         id: 16,
@@ -563,6 +616,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "sweatshirts",
+        accessories: "masks",
     },
     {
         id: 17,
@@ -576,6 +631,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "sweatshirts",
+        accessories: "moleskineJackets",
     },
     {
         id: 18,
@@ -589,6 +646,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "tees",
+        accessories: "moleskineJackets",
     },
     {
         id: 19,
@@ -602,6 +661,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "tees",
+        accessories: "moleskineJackets",
     },
     {
         id: 20,
@@ -615,6 +676,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "tees",
+        accessories: "moleskineJackets",
     },
     {
         id: 21,
@@ -628,6 +691,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "tees",
+        accessories: "wallArts",
     },
     {
         id: 22,
@@ -642,6 +707,8 @@ export const items = [
         cardInfoMini1: cardInfoMini1,
         cardInfoMini2: cardInfoMini2,
         cardInfoMini3: cardInfoMini3,
+        clothing: "pants",
+        accessories: "wallArts",
     },
     {
         id: 23,
@@ -655,6 +722,8 @@ export const items = [
         cardInfoMini1: cardInfoMini1,
         cardInfoMini2: cardInfoMini2,
         cardInfoMini3: cardInfoMini3,
+        clothing: "pants",
+        accessories: "wallArts",
     },
     {
         id: 24,
@@ -669,6 +738,8 @@ export const items = [
         cardInfoMini1: cardInfoMini1,
         cardInfoMini2: cardInfoMini2,
         cardInfoMini3: cardInfoMini3,
+        clothing: "pants",
+        accessories: "figures",
     },
     {
         id: 25,
@@ -683,6 +754,8 @@ export const items = [
         cardInfoMini1: cardInfoMini1,
         cardInfoMini2: cardInfoMini2,
         cardInfoMini3: cardInfoMini3,
+        clothing: "backpacks",
+        accessories: "figures",
     },
     {
         id: 26,
@@ -696,6 +769,8 @@ export const items = [
         cardInfoMini1: cardInfoMini1,
         cardInfoMini2: cardInfoMini2,
         cardInfoMini3: cardInfoMini3,
+        clothing: "backpacks",
+        accessories: "figures",
     },
     {
         id: 27,
@@ -710,6 +785,8 @@ export const items = [
         text2: "Model are 165cm height, wearing Medium size.",
         cardInfoMini2: cardInfoMini2,
         cardInfoMini3: cardInfoMini3,
+        clothing: "backpacks",
+        accessories: "stickerPacksters",
     },
     {
         id: 28,
@@ -723,6 +800,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "backpacks",
+        accessories: "stickerPacksters",
     },
     {
         id: 29,
@@ -736,6 +815,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "hoodiesTshirt",
+        accessories: "vectorPacksfBat",
     },
     {
         id: 30,
@@ -749,6 +830,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "hoodiesTshirt",
+        accessories: "vectorPacksfBat",
     },
     {
         id: 31,
@@ -762,6 +845,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "hoodiesTshirt",
+        accessories: "vectorPacksfBat",
     },
     {
         id: 32,
@@ -775,6 +860,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "hoodiesTshirt",
+        accessories: "posters",
     },
     {
         id: 33,
@@ -788,6 +875,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "vaultHunters",
+        accessories: "posters",
     },
     {
         id: 34,
@@ -801,6 +890,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "vaultHunters",
+        accessories: "posters",
     },
     {
         id: 35,
@@ -814,6 +905,8 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "vaultHunters",
+        accessories: "fonts",
     },
     {
         id: 36,
@@ -827,5 +920,7 @@ export const items = [
         cardInfoMini3: cardInfoMini3,
         text1: "Upgraded Mauser School Bomber jacket. Armored Art, zero gravity combat specialist. D3 Version comes with detachable webbing on the back. Heavy duty and rugged material. packed with back pocket.",
         text2: "Model are 165cm height, wearing Medium size.",
+        clothing: "vaultHunters",
+        accessories: "fonts",
     },
 ];

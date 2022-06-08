@@ -16,6 +16,29 @@ export interface sideBarFiltersTypes {
     konrtolaltdelt: boolean;
 }
 
+export interface productsSideBarFiltersTypes {
+    all: boolean;
+    jackets: boolean;
+    hoodies: boolean;
+    sweatshirts: boolean;
+    tees: boolean;
+    pants: boolean;
+    backpacks: boolean;
+    hoodiesTshirt: boolean;
+    vaultHunters: boolean;
+    boneheadHelmets: boolean;
+    demonPlateSeries: boolean;
+    hfBat: boolean;
+    masks: boolean;
+    moleskineJackets: boolean;
+    wallArts: boolean;
+    figures: boolean;
+    stickerPacksters: boolean;
+    vectorPacksfBat: boolean;
+    posters: boolean;
+    fonts: boolean;
+}
+
 export interface ICard {
     id: number;
     name: string;
@@ -29,6 +52,8 @@ export interface ICard {
     cardInfoMini3: string;
     text1: string;
     text2: string;
+    clothing: string;
+    accessories: string;
 }
 
 export interface ICartItem {

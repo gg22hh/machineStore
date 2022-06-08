@@ -4,16 +4,19 @@
     background-size: cover;
     padding-bottom: 50px;
     min-height: 100vh;
+    animation: cart 2s;
     &__list {
         display: flex;
         flex-direction: column;
         gap: 20px;
         margin-bottom: 50px;
+        animation: cartContent 1s;
     }
     &__buttons {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        animation: cartButtons 1s;
     }
     &__chekout {
         display: flex;
@@ -26,6 +29,7 @@
         color: white;
         text-transform: uppercase;
         margin-bottom: 50px;
+        animation: cartContent 1s;
     }
     &__price {
         & div {
@@ -102,6 +106,33 @@
                 color: white;
             }
         }
+    }
+}
+
+@keyframes cart {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes cartContent {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes cartButtons {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
 

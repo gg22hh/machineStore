@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { ICard, sideBarFiltersTypes, topBarFiltersTypes } from "../types";
+import {
+    ICard,
+    productsSideBarFiltersTypes,
+    sideBarFiltersTypes,
+    topBarFiltersTypes,
+} from "../types";
 
 export const usePagination = (cards: ICard[]) => {
     const [currentPage, setCurrentPage] = useState<number>(1);
@@ -113,6 +118,160 @@ export const useArtistsFilters = (
         } else if (sideBarFilters.konrtolaltdelt) {
             const filtred = items.filter(
                 (item) => item.author === "konrtolaltdelt"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        }
+    }, [
+        setCards,
+        setValue,
+        setCurrentPage,
+        sideBarFilters,
+        items,
+        setFiltredCards,
+        setTopBarFilters,
+        tobBarFiltersObj,
+    ]);
+};
+
+export const useProductsFilters = (
+    setCards: React.Dispatch<React.SetStateAction<ICard[]>>,
+    setValue: React.Dispatch<React.SetStateAction<string>>,
+    setCurrentPage: React.Dispatch<React.SetStateAction<number>>,
+    sideBarFilters: productsSideBarFiltersTypes,
+    items: ICard[],
+    setFiltredCards: React.Dispatch<React.SetStateAction<ICard[]>>,
+    setTopBarFilters: React.Dispatch<React.SetStateAction<topBarFiltersTypes>>,
+    tobBarFiltersObj: topBarFiltersTypes
+) => {
+    useEffect(() => {
+        setValue("");
+        setCurrentPage(1);
+        if (sideBarFilters.all) {
+            setFiltredCards(items);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.jackets) {
+            const filtred = items.filter((item) => item.clothing === "jackets");
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.hoodies) {
+            const filtred = items.filter((item) => item.clothing === "hoodies");
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.sweatshirts) {
+            const filtred = items.filter(
+                (item) => item.clothing === "sweatshirts"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.tees) {
+            const filtred = items.filter((item) => item.clothing === "tees");
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.pants) {
+            const filtred = items.filter((item) => item.clothing === "pants");
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.backpacks) {
+            const filtred = items.filter(
+                (item) => item.clothing === "backpacks"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.hoodiesTshirt) {
+            const filtred = items.filter(
+                (item) => item.clothing === "hoodiesTshirt"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.vaultHunters) {
+            const filtred = items.filter(
+                (item) => item.clothing === "vaultHunters"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.boneheadHelmets) {
+            const filtred = items.filter(
+                (item) => item.accessories === "boneheadHelmets"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.demonPlateSeries) {
+            const filtred = items.filter(
+                (item) => item.accessories === "demonPlateSeries"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.hfBat) {
+            const filtred = items.filter(
+                (item) => item.accessories === "hfBat"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.masks) {
+            const filtred = items.filter(
+                (item) => item.accessories === "masks"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.moleskineJackets) {
+            const filtred = items.filter(
+                (item) => item.accessories === "moleskineJackets"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.wallArts) {
+            const filtred = items.filter(
+                (item) => item.accessories === "wallArts"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.figures) {
+            const filtred = items.filter(
+                (item) => item.accessories === "figures"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.stickerPacksters) {
+            const filtred = items.filter(
+                (item) => item.accessories === "stickerPacksters"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.vectorPacksfBat) {
+            const filtred = items.filter(
+                (item) => item.accessories === "vectorPacksfBat"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.posters) {
+            const filtred = items.filter(
+                (item) => item.accessories === "posters"
+            );
+            setFiltredCards(filtred);
+            setCards(filtred);
+            setTopBarFilters({ ...tobBarFiltersObj, all: true });
+        } else if (sideBarFilters.fonts) {
+            const filtred = items.filter(
+                (item) => item.accessories === "fonts"
             );
             setFiltredCards(filtred);
             setCards(filtred);
